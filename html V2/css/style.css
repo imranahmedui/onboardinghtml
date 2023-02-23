@@ -2629,7 +2629,8 @@ Start Hopital register
 }
 .widget {
 	padding: 15px;
-	font-size: 13px;
+	font-size: 15px;
+	font-weight:500;
 	color: #000;
 	text-align: center;
 }
@@ -2661,13 +2662,60 @@ Start Hopital register
 	background-color:#a6a6a9;
 }
 .c4{
-	background-color:#9F97C5;
+	background-color:#C3E5EF;
 }
 .c4:hover{
-	background-color:#8c83b6;
+	background-color:#D3F4FE;
+}
+.c5{
+	background-color:#EFDEC3;
+}
+.c5:hover{
+	background-color:#FFEDD2;
+}
+.widget a {
+    color: #000;
+    font-weight: 500;
+}
+.digits_onboard a i {
+    font-size: 30px;
+    margin: 0 8px;
+}
+.digits_onboard {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 30px 0px;
+}
+.digits_onboard a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.table thead th {
+	background-color:#f0f0f0;
+}
+.table-bordered td, .table-bordered th {
+    padding: 0.4rem !important;
+    font-size: 12px !important; 
+}
+.table-bordered td a, .table-bordered th a {
+	color:#246DEB;
+	font-weight:500;
 }
 .body_content_wrapper{
-	  padding: 0px 10px 20px 10px;
+/*	  padding: 0px 10px 20px 10px; */
+}
+.body_content_wrapper h2 a {
+    font-size: 14px;
+    color: #246DEB;
+    border-left: 2px solid #000;
+    padding-left: 12px;
+    margin-left: 12px;
+}
+.body_content_wrapper h2{
+    font-size: 20px;
+	
 }
 .search_debit_credit_memo h2{ 
 	  color: #133F72;
@@ -2677,11 +2725,189 @@ Start Hopital register
 	font-size:13px; 
 	display: inline-flex;
 }
+
 /*======================================
 	End My Account CSS
 ========================================*/
 
+/*======================================
+	Start Search Input group field CSS
+========================================*/
 
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group .form-control {
+  width: 100%;
+  margin-bottom: 0;
+}
+.form-control {
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555;
+	vertical-align: middle;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+}
+.input-group-btn {
+  position: relative;
+  white-space: nowrap;
+}
+.input-group-addon, .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}
+.input-group-btn:last-child > .btn1 {
+  margin-left: -1px;
+}
+.input-group-btn > .btn1 {
+  position: relative;
+}
+.btn-default {
+  color: #fff;
+  background-color: #50A5EF;
+  border-color: #50A5EF;
+	border-radius: 0px;
+}
+.btn1 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+}
+.btn1 i {
+    font-size: 24px;
+    line-height: 36px;
+}
+.btn1:hover {
+	background-color: #133F72;
+}
+/*======================================
+	End Search Input group field CSS
+========================================*/
+
+/*======================================
+	Start Upload Products CSS
+========================================*/
+.upload_products {
+    background-color: #FFF3CD;
+	border:1px solid #FFE69C;
+    padding: 25px 20px;
+    margin: 40px auto;
+    text-align: center;
+}
+.upload_products p strong {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: roboto;
+    font-weight: normal;
+    color: #664D03;
+}
+
+.upload_products p {
+    font-size: 14px;
+    line-height: 24px; 
+	font-family:roboto;
+	color:#9E4141;	
+    margin: 12px auto;
+}
+.upload_products i {
+    font-size: 40px;
+    color: #756C53;
+}
+
+.upload_products_btn {
+    background-color: #756C53;
+	border:0px;
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 8px 8px;
+    display: block;
+    text-transform: uppercase;
+}
+.upload_products_btn:hover {
+    background-color: #4D452E;
+}
+
+/*======================================
+	End Upload Products CSS
+========================================*/
+
+
+
+
+/*======================================
+	Start Activity Logs Section CSS
+========================================*/
+.activity_logs {
+    background-color: #F5F5F5;
+    padding: 25px 20px;
+}
+.activity_logs h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.activity_logs ul {
+    margin: 10px auto;
+    font-size: 12px;
+}
+.activity_logs ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+}
+.log_subject {
+    font-weight: 500;
+    font-size: 13px;
+}
+.activity_logs ul li a {
+    color: #246DEB;
+    text-decoration: underline;
+}
+.activity_logs ul li:last-child {
+	
+    border-bottom: 0px solid #ccc;
+}
+.activity_logs_btn {
+    background-color: #535050;
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 8px 8px;
+    display: block;
+    text-transform: uppercase;
+}
+.activity_logs_btn:hover {
+    background-color: #50A5EF;
+}
+/*======================================
+	End Activity Logs Section CSS
+========================================*/
 
 /*======================================
 	Start Product Detail page CSS
@@ -6563,8 +6789,14 @@ select {
 body.offcanvas-active{
 	overflow:hidden;
 }
+#navbar_main .nav-item:hover {
+    background: #3187D2;
+}
+.navbar-nav {
+    margin: 0px 7px;
+}
 #navbar_main .nav-item {
-	padding:10px 10px;
+	padding:10px 7px;
     color: #fff;
     font-size: 16px; 
 }
@@ -6579,8 +6811,8 @@ body.offcanvas-active{
     border-bottom: 0;
 }
 #navbar_main .dropdown-menu li {
-    float: left;
-    width: 300px;
+/*    float: left;
+    width: 300px; */
 }
 #navbar_main .dropdown-menu.show li a {
     color: #212121;
@@ -6592,8 +6824,7 @@ body.offcanvas-active{
 #navbar_main .dropdown-menu {
     border-radius: unset;
     box-shadow: 0px 0px 12px rgb(0 0 0 / 25%);
-    border: 0px;
-	width: 960px;
+    border: 0px; 
     padding: 12px 10px;
 }
 .search-bar select:focus-visible{
