@@ -1178,6 +1178,7 @@ input {
 }
 .header.shop{
 	background:#fff;
+    margin-bottom: 40px;
 }
 .header.shop .nav-inner {
 	margin: 0;
