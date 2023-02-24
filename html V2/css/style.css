@@ -2703,6 +2703,8 @@ Start Hopital register
 .table-bordered td a, .table-bordered th a {
 	color:#246DEB;
 	font-weight:500;
+    line-height: 20px;
+    display: block;
 }
 .body_content_wrapper{
 /*	  padding: 0px 10px 20px 10px; */
@@ -2726,7 +2728,66 @@ Start Hopital register
 	font-size:13px; 
 	display: inline-flex;
 }
+.red {
+	color:#D93D3D !important;
+}
+.btn_fade_blue{
+	background-color:#50A5EF;
+	border-color:#50A5EF;
+	color:#fff !important;
+	font-size:16px !important;
+	
+}
+.btn_blue{
+	background-color:#3187D2;
+	border-color:#50A5EF;
+	color:#fff !important;
+	font-size:16px !important;
+	
+}
+.btn1_blue {
+    background-color: #50A5EF;
+	border:0px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+	font-weight:400;
+    margin: 20px auto;
+}
+.btn1_blk {
+	background-color:#212121;
+}
+.btn1_blue:hover {
+	text-decoration:none !important;
+}
 
+.modal-header {
+    border: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+.modal-header h3 {
+    color: #D93D3D;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+.modal-body p {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #000;
+}
+.modal-body p strong {
+	font-weight:normal;
+}
+.modal-footer {
+    border: 0px;
+}
+.modal-footer a {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
 /*======================================
 	End My Account CSS
 ========================================*/
@@ -5211,6 +5272,30 @@ select {
 		color:#B6B6B6;
 		text-transform:uppercase;
 }
+
+.invite_hospital_wrap{
+	background-color:#F0F0F0;
+	padding: 10px;	
+    text-align: center; 
+    overflow: auto;
+	margin-bottom:40px;
+}
+.invite_hospital_wrap a{
+	text-underline-offset: 0.3em;
+    text-decoration-thickness: 0.1em;
+	padding: 3px;
+}
+.invite_hospital_wrap a:hover{ 
+	text-decoration: underline;
+}
+.invite_hospital_wrap p{
+		color:#B6B6B6;
+		text-transform:uppercase;
+}
+.table-responsive {
+    margin-bottom: 30px;
+}
+
 .fb i{
 	background-color: #1877F2;
     padding: 10px;
