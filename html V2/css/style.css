@@ -738,13 +738,15 @@ input {
 	display: block;
 	line-height: 30px;
 }
+.table i{ 
+	line-height: 30px;
+	font-size:15px;
+}
 .table .fa-trash-can{
 	color:#EA4335;
-	font-size:14px;
 	font-weight:400;
 	text-align:center;
-	display: block;
-	line-height: 30px;
+	display: block; 
 }
 .table .btn {
   background: none;
@@ -2754,6 +2756,16 @@ Start Hopital register
 	font-weight:400;
     margin: 20px auto;
 }
+.btn2_blue {
+    background-color: #50A5EF;
+    border-color: #50A5EF;
+    color: #fff !important;
+    font-size: 15px !important;
+    text-transform: none;
+    border-radius: 0px;
+    float: right;
+    padding: 12px 12px;
+}
 .btn1_blk {
 	background-color:#212121;
 }
@@ -3085,7 +3097,17 @@ Start Hopital register
   color: #133F72;
 	
 }
-
+.physician_sm_pic{
+	width:45px;
+	margin:auto;	
+    display: block;
+}
+.table td{
+	vertical-align:middle!important;
+}
+.table tr{
+	vertical-align:middle!important;
+}
 /*======================================
 	Start Fully Shipped Order page CSS
 ========================================*/
