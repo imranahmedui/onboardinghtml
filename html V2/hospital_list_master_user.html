@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Title Tag  -->
-    <title>Please Create Log In Credentials</title>
+    <title>Dashboard Master User</title>
  
 	<!-- Web Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +88,6 @@
 	
  
 	
-	
 	<!-- Header -->
 	<header class="header shop">
 		 
@@ -114,7 +113,7 @@
 <div class="container text-center">
 	<ul class="navbar-nav bt-1">
 		<li class="nav-item"><a class="nav-link" href="dashboard_master_user.html"> Dashboard</a></li> 
-		<li class="nav-item"><a class="nav-link" href="hospital_list_master_user.html"> Hospitals</a></li> 
+		<li class="nav-item nav_item_active"><a class="nav-link" href="hospital_list_master_user.html"> Hospitals</a></li> 
 		<li class="nav-item"><a class="nav-link" href="physician_list_masteruser.html"> Physicians</a></li> 
 		<li class="nav-item"><a class="nav-link" href="products.html"> Products</a></li> 
 		<li class="nav-item"><a class="nav-link" href="contactus.html"> Support </a></li>
@@ -158,60 +157,127 @@
 	<!--/ End Header -->
 	 
 	  
- <!-- Start Login -->
-	
-	 <div class="container login_signup_wrap mb-0">
-	 <div class="row">
-	 
-	 <div class="col-lg-8 col-md-12 col-12 mx-auto"> 
-	  
-	 <h1 class="py-4">Invite New Physcian</h1> 
- 
-	 </div>
-	 </div>
-	 </div>
-	
-	
-	 <div class="container login_signup_wrap mt-2">
-	 <div class="row">
-	 
-	 <div class="col-lg-8 col-md-12 col-12 mx-auto"> 
-	 
-	 <div class="login_wrap">
-	 <form class="py-4 needs-validation" novalidate>
- 
-   	
-	<div class="form-group has_input_icon col-md-6 col-12">
-    <label>Physician Name</label> 
-    <input type="text" name="Physician Name" class="form-control icon_gap">
-  </div>
-	 
-	<div class="form-group has_input_icon col-md-6 col-12">
-    <label>Physician Email</label> 
-    <input type="text" name="Physician Email" class="form-control icon_gap">
-  </div>
   
-	<div class="form-group has_input_icon col-md-6 col-12">
-    <label>Physician Specialty</label> 
-    <input type="text" name="Physician Specialty" class="form-control icon_gap">
-  </div>
-	 
-	<div class="form-group has_input_icon col-md-6 col-12">
-    <label>Hospital Name</label> 
-    <input type="text" name="Hospital Name" class="form-control icon_gap">
-  </div>
+	
+	 <div class="container mt-2">
   
-  	<div class="col-md-6 mx-auto"> <button type="submit" class="btn-primary btn-lg btn-block primary_btn my-4 float-left">Invite Physician</button></div>
+<!-- Start Physicians List -->
+   <div class="row">
 	 
+	 <div class="col-12"> 
+	 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+  
+<div class="row">
+<div class="col-md-6">
+ 
+ <h2 class="w-100">Physicians List <a href="invite_hospital.html">Add Hospital</a></h2>  </div>	
+	
+<div class="col-md-6">
+	 <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Hospital">
+            <div class="input-group-btn">
+                <button class="btn1 btn-default" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+		
+ </div>	 
+ 
+ 
+
+
+ </div>	
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top"> 
+ <th>Hospital Name</th>
+ <th>Creator Name</th>
+ <th>Tax ID</th>
+ <th>Address</th>
+ <th class="text-center">Total Physicians</th> 
+ <th>Website</th> 
+ <th class="text-center">Edit</th>
+ <th class="text-center">Remove</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr> 
+   <td>HSS Hip & Knee</td>
+   <td>Lilly Mehao</td>
+   <td>G345341</td>
+   <td>840 Winter Street Waltham, MA 02451</td>
+   <td class="text-center">12</td>
+   <td>www.bostonsportsmed.com</td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   </tr>
+   <tr> 
+   <td>North Atlantic Surgical Suites</td>
+   <td>Christian</td>
+   <td>G32343541</td>
+   <td>23 Keewaydin Dr #100, Salem, NH 03079, United States</td>
+   <td class="text-center">1</td>
+   <td>www.northatlanticss.com</td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   </tr>
+   <tr> 
+   <td>Orthopedic Specialist of Mass</td>
+   <td>Marcus</td>
+   <td>G345324341</td>
+   <td>825 Washington Street, Suite #260,Norwood, MA 02062</td>
+   <td class="text-center">2</td>
+   <td>www.orthomass.com</td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   </tr>
+   <tr> 
+   <td>Boston Sports Medicine</td>
+   <td>Stephan</td>
+   <td>G3443241</td>
+   <td>535 East 70th StreetNew York, NY 10021</td>
+   <td class="text-center">3</td>
+   <td>www.hss.edu</td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   </tr>
+   <tr> 
+   <td>COSM</td>
+   <td>Kelly</td>
+   <td>G312341</td>
+   <td>840 Winter Street Waltham, MA 02451</td>
+   <td class="text-center">12</td>
+   <td>www.cosm.com</td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   </tr> 
+    
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
 	 </form>  
+ 
+
+	 </div>
+	
+	 
 	 
 	 </div>
+<!-- End Physicians List -->
+
+
+
 	 
-	 </div>
 	 
-	 </div>
-	 
-	 </div>
+	 </div> 
 	
  
 	<!-- Start Footer -->
@@ -239,6 +305,34 @@
 <!-- End Footer -->	
 	 
 
+ 
+ 
+<!-- Modal -->
+<div class="modal fade" id="update_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+		 <h3 class="mx-auto">Physician profile is not completed</h3>
+		
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+		<p><strong>Please Send Reminder To Physician OR Complete Yourself!</strong></p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <a href="#" class="btn btn-secondary btn_fade_blue">Send Reminder</a>
+        <a href="#" class="btn btn-primary btn_blue">Complete Yourself</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End Modal Popup -->
 	
 
 	<!-- Jquery -->
