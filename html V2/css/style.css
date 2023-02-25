@@ -6900,6 +6900,10 @@ body.offcanvas-active{
 #navbar_main .nav-item:hover {
     background: #3187D2;
 }
+.nav_item_active {
+    background: #3187D2;
+    padding: 10px 7px;
+}
 .navbar-nav {
     margin: 0px 7px;
 }
