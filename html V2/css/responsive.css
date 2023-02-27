@@ -374,11 +374,18 @@
 	padding:20px 0;
 }
 
-
-
-
-
 }
+
+
+@media only screen and (max-width: 991px) {
+.recommend_products_wrapper{	
+    min-height: inherit;
+    max-height: inherit;
+    overflow-y: auto;
+}
+	
+}
+
 @media only screen and (max-width: 989px) {
 	
 .hac{

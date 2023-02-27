@@ -35,6 +35,8 @@
   color: #212121;
   font-family: roboto;
   font-weight: 500;
+  width: 100%;  
+  float: left;
 }
 .form-control {
   display: block;
@@ -410,6 +412,24 @@ color: #fff;
 .list-checkmarks2 li:last-child
 {
   margin-bottom: 0px;
+}
+.clear_btn {
+    background-color: #3C3939; 
+    text-transform: uppercase;
+    font-family: roboto;
+	color:#fff;
+    font-size: 16px;
+    line-height: 35px;
+    float: right;
+    padding: 1px 15px;
+    border-radius: 0px;
+	border:0px;
+}
+.clear_btn i {
+    margin: 0 8px 0px 0px;
+}
+.clear_btn:hover {
+	  background-color: #133F72;
 }
 .primary_btn{
 	  background-color: #50A5EF;
@@ -2411,7 +2431,7 @@ Start Hopital register
     float: left;
     width: 100%;
     padding:20px 12px 5px 12px;
-    margin: -27px 0px 40px 0px;
+    margin: 0px 0px 40px 0px;
     text-align: left;
 }
 
@@ -2435,9 +2455,21 @@ Start Hopital register
     margin: 0px;
 }
 
-
-
-/*======================================
+.physician_picture{
+    border-radius: 50px 0px;
+    max-width: 250px;
+    min-width: 250px;
+}
+.physician_detail {
+    display: block;
+    float: left;
+    margin-top: -25px;
+}
+.physician_detail p {
+    margin: 10px auto !important;
+	text-align:left;
+}
+/*=====================================
 	Start sidebar2  CSS
 ========================================*/
 .sidebar {
@@ -2733,6 +2765,17 @@ Start Hopital register
 .red {
 	color:#D93D3D !important;
 }
+.btn_delete_red {
+	background: #D93D3D;
+    border: #D93D3D;
+	color:#fff;
+}
+
+.btn_delete_red:hover {
+	background: #b22727;
+    border: #b22727;
+}
+	
 .btn_fade_blue{
 	background-color:#50A5EF;
 	border-color:#50A5EF;
@@ -3101,6 +3144,7 @@ Start Hopital register
 	width:45px;
 	margin:auto;	
     display: block;
+  border:1px solid #ccc;
 }
 .table td{
 	vertical-align:middle!important;
@@ -5256,6 +5300,18 @@ select {
   background-color: #F2F2F2;
   border-radius: 100px;
   
+}
+.login_signup_wrap h4 {
+    font-size: 20px;
+    color: #000;
+    line-height: 35px;
+    font-weight: 400;
+}
+.login_signup_wrap h5 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: 35px;
 }
 .login_signup_wrap {
   display: block;
@@ -7770,3 +7826,117 @@ body.offcanvas-active{
     -moz-opacity: 0; /* Safari 1.x */
     -khtml-opacity: 0;
 }
+
+
+
+/********************* Start Accordians Recommended Products***************************/
+.recommend_products_wrapper {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    padding: 20px 12px;
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.recommend_products_wrapper li img {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: 0px 12px 0px 0px;
+}
+.recommend_products_wrapper li input {
+    float: right;
+    margin: 8px 0px 0px 0px;
+}
+.recommend_products_wrapper label {
+	color: #212121;
+    text-transform: none;
+    font-size: 13px;
+    font-family: roboto;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0px 12px;
+    float: none;
+}
+.listing {
+    max-height: 300px;
+    min-height: 300px;
+    overflow-y: auto;
+}
+.view_details { 
+	display: inline !important;
+    font-weight: 500 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.rc_product_img {
+    float: left;
+}
+.widget-content ul#accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    text-align: left;
+}
+.widget-content ul#accordion li {
+  display: block;
+  margin: 0 0 25px;
+}
+.recommend_products_wrapper .widget-content .listing li:hover {
+	background-color:#f0f0f0;
+}
+.widget-content ul#accordion li .plusminus {
+    position: absolute;
+    right: 30px;
+    font-size: 25px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.widget-content ul#accordion li h4 {
+	font-size: 20px;
+    font-family: 'Roboto';
+    color: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 5px 12px;
+    background-color: #50A5EF;
+    border-radius: 0px;	
+    cursor: pointer;
+}
+ .widget-content ul#accordion li h4:after {
+/*  content: "";
+  border: 1.5px solid #000;
+  left: 16px;
+  position: absolute;
+  width: 26px;
+  top: 25px; */
+}
+ .widget-content ul#accordion li:first-child ul { 
+  display: block;
+}
+ .widget-content ul#accordion li ul {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+.widget-content ul#accordion li ul li {
+    padding: 4px 10px;
+    margin: 0;
+}
+.widget-content ul#accordion li ul li a {
+	color: #246DEB;
+    text-transform: none;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 300;
+    display: block; 
+}
+.widget-content ul#accordion li ul li a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+/********************* End Accordians Recommended Products***************************/

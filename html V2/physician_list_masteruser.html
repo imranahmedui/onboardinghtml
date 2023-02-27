@@ -174,7 +174,7 @@
 <div class="row">
 <div class="col-md-4">
  
- <h2 class="w-100">Physicians List</h2>  </div>	
+ <h2 class="w-100">Physicians List<a href="invite_physician.html">Add Physician</a></h2>  </div>	
 	
 <div class="col-md-4">
 	 <div class="input-group">
@@ -222,14 +222,14 @@
   </thead>
   <tbody>
    <tr>
-   <td><img src="images/curtis.jpg" class="physician_sm_pic"></td>
+   <td><img src="images/alberto-carli-headshot.jpg" class="physician_sm_pic"></td>
    <td>HSS Hip & Knee</td>
    <td>Dr. Alberto Carli, MD</td>
    <td>Hip and Knee Replacement</td>
    <td>Knee , Hip</td>
-   <td class="text-center"><a href="#">View All</a></td>
-  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
-  <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td>
+   <td class="text-center"><a href="recommended_products_listed.html">View All</a></td>
+  <td class="text-center"><a href="edit_physician.html" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td>
+  <td class="text-center"><a href="#" data-toggle="modal" data-target="#delete"><i class="fa-solid fa-trash-can"></i></a></td>
    </tr>
    <tr>
    <td><img src="images/gonzalez-della-valle-bio.jpg" class="physician_sm_pic"></td>
@@ -572,12 +572,12 @@
  
  
 <!-- Modal -->
-<div class="modal fade" id="update_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
        
-		 <h3 class="mx-auto">Physician profile is not completed</h3>
+		 <h3 class="mx-auto">Do you want to remove the Hospital?</h3>
 		
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -585,11 +585,11 @@
       </div>
       <div class="modal-body">
       
-		<p><strong>Please Send Reminder To Physician OR Complete Yourself!</strong></p>
+		<p><strong>{Hospital Name} like (BSSC) from the approved facilities list.</strong></p>
       </div>
       <div class="modal-footer mx-auto">
-        <a href="#" class="btn btn-secondary btn_fade_blue">Send Reminder</a>
-        <a href="#" class="btn btn-primary btn_blue">Complete Yourself</a>
+        <a href="#" class="btn btn-secondary btn_delete_red">Delete</a>
+        <a href="#" class="btn btn-primary btn_blue">Cancel</a>
       </div>
     </div>
   </div>
