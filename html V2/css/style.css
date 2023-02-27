@@ -2469,6 +2469,12 @@ Start Hopital register
     margin: 10px auto !important;
 	text-align:left;
 }
+.hospital_picture {
+    width: 250px;
+    padding: 12px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
 /*=====================================
 	Start sidebar2  CSS
 ========================================*/
