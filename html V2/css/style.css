@@ -2475,6 +2475,85 @@ Start Hopital register
     border: 1px solid #fff;
     background-color: #fff;
 }
+/* Product Card */
+.filter {
+    background-color: #E3EDF5;
+    padding: 12px 12px;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+.filter label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.filter select {
+    padding: 6px 6px;
+    margin: 0px 5px;
+}
+select.form-control[multiple], select.form-control[size] {
+    height: auto !important;
+}
+select.form-control[multiple] option {
+    padding: 8px 12px;
+}
+.body_part_tab li button {
+    font-size: 17px !important;
+    font-weight: 500;
+    color: #000;
+}
+.body_part_tab .nav-link.active { 
+    color: #246DEB;
+}
+.filter div {
+    margin: 6px 0;
+}
+#myTabContent .row .col {
+    margin: 12px 0;
+}
+.card{
+    box-shadow: 0px 0px 50px 0px rgb(230 243 254 / 37%);
+}
+.card-img-top {
+    width: 250px;
+    margin: auto;
+    min-width: 250px;
+}
+.card-body {
+    padding: 5px 12px 12px;
+	text-align:center;
+}
+.body_part {
+    background-color: #E3EDF5;
+    padding: 4px 12px;
+    color: #50A5EF;
+    font-weight: 500;
+    width: auto;
+    display: inline-block; 
+    margin: 12px 0px;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+}
+.card-title{
+	color:#2A62A4;
+}
+.card-footer a {
+    font-size: 15px !important;
+    font-family: 'Roboto'; 
+}
+.card-footer a i {
+    margin: 0px 3px;
+}
+.card-body p { 
+    font-size: 14px; 
+}
+.price {
+    color: #2A62A4;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 12px 0px;
+}
 /*=====================================
 	Start sidebar2  CSS
 ========================================*/
@@ -2765,7 +2844,7 @@ Start Hopital register
 	  font-size: 16px;
 }
 .body_content_wrapper label{
-	font-size:13px; 
+	font-size:15px; 
 	display: inline-flex;
 }
 .red {
