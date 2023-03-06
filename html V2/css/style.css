@@ -477,17 +477,18 @@ color: #fff;
 
 .has_input_icon .form_control_style {
 	position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    pointer-events: none;
-    color: #B6B6B6;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 0px 13px;
+	z-index: 2;
+	display: block;
+	width: 2.375rem;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #B6B6B6;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 0px 13px;
+    top: 33px;
+	pointer-events: none;
 }
 
 .form-control{
