@@ -197,7 +197,7 @@
   <thead>
    <tr class="align-text-top"> 
  <th>Hospital Name</th>
- <th>Creator Name</th>
+ <th>Admin Name</th>
  <th>Tax ID</th>
  <th>Address</th>
  <th class="text-center">Total Physicians</th> 
@@ -220,7 +220,7 @@
 
    <tr> 
    <td>HSS Hip & Knee</td>
-   <td>Lilly Mehao</td>
+   <td><a href="#"  data-toggle="modal" data-target="#enter_email" >Assign Admin</a></td>
    <td>G345341</td>
    <td>840 Winter Street Waltham, MA 02451</td>
    <td class="text-center">12</td>
@@ -240,7 +240,7 @@
    </tr>
    <tr> 
    <td>Orthopedic Specialist of Mass</td>
-   <td>Marcus</td>
+   <td><a href="#"  data-toggle="modal" data-target="#enter_email" >Assign Admin</a></td>
    <td>G345324341</td>
    <td>825 Washington Street, Suite #260,Norwood, MA 02062</td>
    <td class="text-center">2</td>
@@ -309,26 +309,59 @@
 
  
  
-<!-- Modal -->
-<div class="modal fade" id="update_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal Popup -->
+ 
+<div class="modal fade" id="enter_email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-       
-		 <h3 class="mx-auto">Physician profile is not completed</h3>
-		
+ 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-      
-		<p><strong>Please Send Reminder To Physician OR Complete Yourself!</strong></p>
+  	   <div class="row">
+	    <div class="col-12">
+		<table class="table table-info">
+		<tr>
+		<th class="text-right" scope="col">Physician Name:</th>
+		<th class="text-left">Mark Adam</th>
+		</tr>
+		<tr>
+		<th class="text-right" scope="col">Hospital Name:</th>
+		<th class="text-left">HSS Hip & Knee</th>
+		</tr>
+		
+		</table>
+		
+		</div> 
+	   
+	   
+	   </div>   
+		 
+	 <div class="text-center">
+	 <form class="py-4 needs-validation">
+ 
+   	
+	<div class="form-group has_input_icon col-12"> <h4 class="py-2">Please Enter Email Address</h4>
+        <input type="text" name="email" class="form-control icon_gap" required="">  
+		<button class="btn btn-secondary btn_fade_blue mt-2">Send</button> 
+  </div>
+ 
+ 
+	 
+	 </form>  
+	 
+	 </div>
+		
+		
+		
       </div>
-      <div class="modal-footer mx-auto">
-        <a href="#" class="btn btn-secondary btn_fade_blue">Send Reminder</a>
-        <a href="#" class="btn btn-primary btn_blue">Complete Yourself</a>
-      </div>
+	  
+
+	  
+    
     </div>
   </div>
 </div>
