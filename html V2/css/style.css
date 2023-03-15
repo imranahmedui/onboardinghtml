@@ -5413,7 +5413,7 @@ select {
   font-size: 15px;
   color: #000;
   line-height: 26px;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 .login_signup_wrap p a {
   color: #187BD2;
@@ -6939,7 +6939,7 @@ select {
 	20. Start Footer CSS
 ===============================*/
 .footer{
-	 
+ 
 }
 .footer-top {
     padding: 20px 0px;
@@ -7946,6 +7946,44 @@ body.offcanvas-active{
     padding: 0px 12px;
     float: none;
 }
+/* Start Product Detail Page */
+.product_specialties span {
+    margin: 2px;
+}
+ 
+.product_image_thumbnail {
+    float: left; 
+}
+.product_image_thumbnail img {
+    float: left;
+    width: 80px;
+    border: 1px solid #f0f0f0;
+    margin: 10px 10px 0px 0px;
+}
+.product_image_thumbnail img:hover {
+    float: left;
+    width: 80px;
+    border: 1px solid #50A5EF;
+    margin: 10px 10px 0px 0px;
+}
+.a-unordered_list {
+    display: block;
+    padding: 0px;
+    margin: 10px 0px 10px 12px;
+}
+.a-unordered_list li {
+    list-style-type: disc;
+    line-height: 27px;
+    color: #000;
+}
+.table_wrapper {
+    margin: 12px 0;
+}
+.table_wrapper table th, td {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+/* End Product Detail Page */
 .listing {
     max-height: 300px;
     min-height: 300px;
