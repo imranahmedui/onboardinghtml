@@ -5414,6 +5414,7 @@ select {
   color: #000;
   line-height: 26px;
   margin: 15px 0px;
+    text-align: left;
 }
 .login_signup_wrap p a {
   color: #187BD2;
@@ -7947,12 +7948,16 @@ body.offcanvas-active{
     float: none;
 }
 /* Start Product Detail Page */
+.modal-lg { 
+    max-width: 90%;
+}
 .product_specialties span {
     margin: 2px;
 }
  
 .product_image_thumbnail {
     float: left; 
+    margin-bottom: 20px;
 }
 .product_image_thumbnail img {
     float: left;
@@ -7975,6 +7980,7 @@ body.offcanvas-active{
     list-style-type: disc;
     line-height: 27px;
     color: #000;
+	width: 100% !important;
 }
 .table_wrapper {
     margin: 12px 0;
