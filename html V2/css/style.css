@@ -2833,11 +2833,11 @@ select.form-control[multiple] option {
     font-size: 14px;
     color: #246DEB;
     border-left: 2px solid #000;
-    padding-left: 12px;
-    margin-left: 12px;
+    padding-left: 4px;
+    margin-left: 4px;
 }
 .body_content_wrapper h2{
-    font-size: 20px;
+    font-size: 18px;
 	
 }
 .search_debit_credit_memo h2{ 
@@ -5362,6 +5362,19 @@ select {
     padding: 15px;
     margin: 20px 0px;
 }
+.alert_error_custom{
+	font-size: 20px;
+    font-family: roboto;
+    color: #D93D3D;
+    background-color: #FFDFDF;
+    border-radius: 30px !important;
+    padding: 15px;
+    margin: 20px 0px;
+}
+.errorlist {
+    font-size: 12px;
+    line-height: 18px;
+}
 .hospital_icon{
   background-image: url(../images/hospital.png); 
   background-repeat: no-repeat;
@@ -5408,13 +5421,13 @@ select {
 .login_signup_wrap h1 {
   text-transform: none;
   line-height: 35px;
+  margin: 15px 0;
 }
 .login_signup_wrap p {
   font-size: 15px;
   color: #000;
   line-height: 26px;
-  margin: 15px 0px;
-    text-align: left;
+  margin: 15px 0px; 
 }
 .login_signup_wrap p a {
   color: #187BD2;
@@ -5437,7 +5450,15 @@ select {
 		color:#B6B6B6;
 		text-transform:uppercase;
 }
-
+.btn_sm{
+	color: #fff;
+    background-color: #246DEB;
+    margin-left: 0px;
+    border-top: 0px;
+    border: 0px;
+    padding: 6px;
+    font-size: 12px;
+}
 .invite_hospital_wrap{
 	background-color:#F0F0F0;
 	padding: 10px;	
