@@ -2947,6 +2947,9 @@ select.form-control[multiple] option {
   width: 100%;
   margin-bottom: 0;
 }
+textarea.form-control{
+    height: 170px !important;
+}
 .form-control {
 	height: 34px;
 	padding: 6px 12px;
