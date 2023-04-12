@@ -5441,6 +5441,7 @@ select {
 	padding: 48px;	
     text-align: center; 
     overflow: auto;
+	margin-bottom: 100px;
 }
 .login_wrap a{
 	text-underline-offset: 0.3em;
@@ -6972,7 +6973,7 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
-
+ 
 .footer{
  position: absolute;
     bottom: 0;
