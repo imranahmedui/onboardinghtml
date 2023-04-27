@@ -28,6 +28,28 @@
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+/* Add Product Button in Product Detail Page */
+.add_product_btn1{
+	border-radius: 100%;
+    line-height: 27px;
+    text-align: center;
+    padding: 5px;
+    height: 35px;
+    width: 33px;
+    right: 4px;
+    top: 4px;
+	background-color: #2A62A4;
+    color: #fff !important;
+    position: absolute;
+}
+.add_product_btn2 {
+    background-color: #2A62A4;
+    color: #fff !important;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    border-radius: 12px 0px 0px 12px;
+}
 /* Tooltip */
 .tip_new p{
 	color: #000;
