@@ -28,9 +28,25 @@
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+/* Select All */
+.select_all {
+    width: 100%;
+    float: right;
+    font-weight: 600 !important;
+    background-color: #f0f0f0;
+    margin: 12px auto;
+}
+.select_all label {
+    text-align: right !important;
+    font-weight: 500 !important;
+}
+.select_all label input { 
+    margin-left: 12px !important;
+}
+
 /* Go Back */
-.go_back{
-	float:right;
+.go_back{ 
+    float: left;
 	background-color: #50A5EF;
     color: #fff;
     padding: 8px;
@@ -8134,6 +8150,7 @@ body.offcanvas-active{
     max-height: 450px;
     min-height: 450px;
     overflow-y: auto;
+	width: 100%;
 }
 #accordion .listing {
     min-height: 300px;
