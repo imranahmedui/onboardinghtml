@@ -28,6 +28,26 @@
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+/* Go Back */
+.go_back{
+	float:right;
+	background-color: #50A5EF;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+	margin: 12px auto;
+}
+.go_back button{
+	border: 0px;
+	background-color:inherit;
+}
+.go_back button a{
+    color: #fff !important;
+}
+.go_back:hover{ 
+	background-color: #3187D2;
+}
+
 /* Add Product Button in Product Detail Page */
 .add_product_btn1{
 	border-radius: 100%;
@@ -8094,7 +8114,7 @@ body.offcanvas-active{
 .a-unordered_list {
     display: block;
     padding: 0px;
-    margin: 10px 0px 10px 12px;
+    margin: 10px 0px 30px 12px;
 }
 .a-unordered_list li {
     list-style-type: disc;
