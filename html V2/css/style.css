@@ -28,6 +28,11 @@
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+/* Notification UL LI */
+.alert_custom li {
+    font-size: 18px;
+    text-transform: initial;
+}
 /* Small Button */
 .btn_small{
 	width: auto !important;
