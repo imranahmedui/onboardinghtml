@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>Reports</title>
+ 
+	<!-- Web Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9ddbcb7f65.js" crossorigin="anonymous"></script>
+   
+	 <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css"> 
+	
+	<!-- custom StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<!-- Start Responsive top Menus -->	
+ <script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+<!-- End Responsive top Menus -->	 	
+
+ <!-- date range -->
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+	  <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+ <!-- date range -->	
+</head>
+<body>
+	
+ 
+	
+	<!-- Header -->
+	<header class="header shop">
+		 
+	 
+		<!-- Header Inner -->
+<div class="header-inner">
+        <div class="container">
+            <div class="cat-nav-head">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo"> <a style="text-decoration: none;" href="/dashboard/master/main/">RECOVERY SHOP - ONBOARDING  | </a> </div>	
+                        <span class="screen-darken"></span>		
+                        <button data-trigger="navbar_main" class="d-lg-none btn" type="button">  <i class="fa-solid fa-bars pr-2"></i> </button>
+                                    <!-- ============= COMPONENT ============== -->
+                        <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg  navbar-light">
+                            <div class="container-fluid px-0">
+                                <div class="offcanvas-header float-right">  
+                                    <button class="btn-close float-end"><i class="fa-solid fa-circle-xmark"></i></button>
+                                </div>
+                                <div class="container text-center">
+                                    <ul class="navbar-nav bt-1">
+                                        
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Practice</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="/views/hospital/?objtype=onboarded">Onboarded </a></li>
+                                                    <li><a class="dropdown-item" href="/views/qshospitals/">Invited</a></li>		  
+                                                </ul>
+                                            </li>  	 
+                                        </ul>
+                                        
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+
+                                                
+                                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Physicians</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="/views/physician/">Onboarded</a></li>
+                                                    <li><a class="dropdown-item" href="/views/physician/qsview/?invite=True">Invited</a></li>		  
+                                                </ul>
+                                                
+                                            </li>  	 
+                                        </ul>
+                                       
+                                        <li class="nav-item"><a class="nav-link" href="/views/product/">Products</a></li> 
+                                        <li class="nav-item"><a class="nav-link" href="/support/">Support </a></li>
+                                     
+                                        
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Onboarding</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="/views/invite_view/hospital/">Invite Hospital</a></li>
+                                                    <li><a class="dropdown-item" href="/quickstart/physician/?invite=True">Invite Physicians</a></li>		  
+                                                </ul>
+                                            </li>  	 
+                                        </ul>
+                                        	
+                                        <li class="nav-item"><a class="nav-link" href="reports">Reports</a></li> 
+                                        
+                                    </ul>
+                                    <ul class="navbar-nav bt-1">
+                                        <li class="nav-item"><span>Welcome, Wajahat(Admin)</span></li>
+                                        <li class="nav-item separate_li">/</li>
+                                        <li class="nav-item"><a class="nav-link" href="/register/logout/">SignOut</a></li> 
+                                    </ul>
+                                </div>
+                            </div> <!-- container-fluid.// -->
+                        </nav>
+<!-- ============= COMPONENT END// ============== -->  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	 
+	  
+  
+	
+	 <div class="container mt-2">
+	 <div class="row">
+	 
+	 <div class="col-12"> 
+	 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+ 
+ <!-- Start Products Sales -->
+<div class="row">
+<div class="col-md-8">
+ 
+ <h2 class="w-100">Products Sales by HSS</h2>  </div>	
+	
+ 
+<div class="col-md-4">
+<a href="#" class="btn btn-primary mx-2 my-1 btn2_blue fl-right">Send Via Email</a>
+<a href="#" class="btn btn-primary btn2_blue my-1 fl-right">Export CSV</a>
+</div>
+
+
+ </div>
+ 
+ 
+ <!-- start filter -->
+ <div class="row py-3 filter_report">
+<div class="col-md-4">
+ 
+ <span>Please Hospital</span> 
+ <select>
+ <option>Orthopedic Surgeons of HSS</option>
+ <option>BSSC</option>
+ <option>COSM</option>
+ <option>Boston Sports Medicine</option>
+ <option>Orthopedic Specialist of Mass.</option>
+ <option>North Atlantic Surgical Suites</option>
+ <option>Orthopedic Associates Of Long Island</option>
+ </select>
+
+ </div>	
+ 
+ 
+<div class="col-md-2">
+ 
+ <label><input type="checkbox">Select Physician </label> 
+  
+
+ </div>	
+ 
+ 
+<div class="col-md-4 replace_1">
+   <input id="startDate" class="start_date" />
+   <input id="endDate" class="end_date" />
+
+ </div>	
+<div class="col-md-2">
+<button type="submit" class="clear_btn search_report">Search</button>
+ </div>	
+	
+ </div>	
+ 
+ <!-- end filter -->
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top">
+  <th>Product</th>
+  <th>Units Sold</th>
+  <th>Patient Price</th>
+  <th>HSS Cost</th>
+  <th>HSS Net</th> 
+  <th>Product Sales</th> 
+  <th>HSS COGS</th>
+  <th>HSS Gross Profit</th> 
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   <td>Breg Polar Cube </td>
+   <td>5</td>
+   <td>$200.00</td>
+   <td><input type="text"></td>
+   <td>$57.50 </td>
+   <td>$1,000.00</td>
+   <td>$712.50</td> 
+   <td>$287.50</td> 
+   </tr>
+   <tr>
+   <td>Breg Polar Wave </td>
+   <td>4</td>
+   <td>$350.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,400.00</td>
+   <td>$1,100.00</td> 
+   <td>$300.00</td> 
+   </tr>
+   <tr>
+   <td>Recovery Kit </td>
+   <td>3</td>
+   <td>$49.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$147.00</td>
+   <td>$105.00</td> 
+   <td>$42.00</td> 
+   </tr>
+   <tr>
+   <td>Massage Gun</td>
+   <td>4</td>
+   <td>$100.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$400.00</td>
+   <td>$280.00</td> 
+   <td>$120.00</td> 
+   </tr>
+   <tr>
+   <td>Raised Toilet Seat w/ Handles</td>
+   <td>4</td>
+   <td>$60.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$240.00</td>
+   <td>$190.00</td> 
+   <td>$50.00</td> 
+   </tr>
+   <tr>
+   <td>Shower Chair</td>
+   <td>2</td>
+   <td>$42.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$84.00</td>
+   <td>$61.80</td> 
+   <td>$22.20</td> 
+   </tr>
+   <tr>
+   <td>Shower Transfer Bench</td>
+   <td>3</td>
+   <td>$75.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$225.00</td>
+   <td>$160.29</td> 
+   <td>$64.71</td> 
+   </tr>
+   <tr>
+   <td>ADL Kit</td>
+   <td>2</td>
+   <td>$45.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$90.00</td>
+   <td>$58.00</td> 
+   <td>$32.00</td> 
+   </tr>
+   <tr>
+   <td>Compression Knee Sleeve</td>
+   <td>2</td>
+   <td>$40.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$80.00</td>
+   <td>$55.00</td> 
+   <td>$25.00</td> 
+   </tr>
+   <tr>
+   <td>Compression Socks</td>
+   <td>3</td>
+   <td>$30.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$90.00</td>
+   <td>$67.50</td> 
+   <td>$22.50</td> 
+   </tr>
+   <tr>
+   <td>Scar Cream</td>
+   <td>3</td>
+   <td>$35.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$105.00</td>
+   <td>$70.50</td> 
+   <td>$34.50</td> 
+   </tr>
+   <tr>
+   <td>DVT Device</td>
+   <td>3</td>
+   <td>$199.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$597.00</td>
+   <td>$411.00</td> 
+   <td>$186.00</td> 
+   </tr>
+   <tr>
+   <td>Foam Seat Cushion</td>
+   <td>3</td>
+   <td>$25.00</td>
+   <td><input type="text"></td>
+   <td>$75.00</td>
+   <td>$75.00</td>
+   <td>$58.50</td> 
+   <td>$16.50</td> 
+   </tr>
+   <tr>
+   <td>Knee Bundle</td>
+   <td>3</td>
+   <td>$373.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,120.50</td>
+   <td>$900.75</td> 
+   <td>$219.75</td> 
+   </tr>
+   <tr>
+   <td>Hip Bundle</td>
+   <td>3</td>
+   <td>$387.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,161.00</td>
+   <td>$918.00</td> 
+   <td>$243.00</td> 
+   </tr>
+   <tr>
+   <td>Shoulder Bundle 2</td>
+   <td>3</td>
+   <td>$434.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,302.00</td>
+   <td>$1,033.50</td> 
+   <td>$268.50</td> 
+   </tr>
+   <tr>
+   <td>Nice Cold Therapy 2 Week Rental</td>
+   <td>2</td>
+   <td>$350.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$700.00</td>
+   <td>$550.00</td> 
+   <td>$150.00</td> 
+   </tr>
+   <tr>
+   <td>Nice Cold Therapy 3 Week Rental</td>
+   <td>2</td>
+   <td>$500.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,00.00</td>
+   <td>$830.00</td> 
+   <td>$170.00</td> 
+   </tr>
+   <tr>
+   <td>Nice Cold Therapy 4 Week Rental</td>
+   <td>2</td>
+   <td>$650.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$1,300.00</td>
+   <td>$1,060.00</td> 
+   <td>$240.00</td> 
+   </tr>
+   <tr>
+   <td>Polar Wave Replacement Pad</td>
+   <td>2</td>
+   <td>$68.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$136.00</td>
+   <td>$120.00</td> 
+   <td>$16.00</td> 
+   </tr>
+   <tr>
+   <td>Padded Arm Sling</td>
+   <td>2</td>
+   <td>$45.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$$90.00</td>
+   <td>$70.00</td> 
+   <td>$20.00</td> 
+   </tr>
+   <tr>
+   <td>ABD Sling</td>
+   <td>2</td>
+   <td>$75.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$150.00</td>
+   <td>$120.00</td> 
+   <td>$30.00</td> 
+   </tr>
+   <tr>
+   <td>Mesh Arm Sling</td>
+   <td>2</td>
+   <td>$12.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$24.00</td>
+   <td>$17.00</td> 
+   <td>$7.00</td> 
+   </tr>
+   <tr>
+   <td>Shoulder Bundle 3</td>
+   <td>2</td>
+   <td>$495.00</td>
+   <td><input type="text"></td>
+   <td> </td>
+   <td>$990.00</td>
+   <td>$820.00</td> 
+   <td>$170.00</td> 
+   </tr> 
+   <tr>
+   <td>Breg Polar Cube </td>
+   <td>5</td>
+   <td>$200.00</td>
+   <td><input type="text"></td>
+   <td>$57.50 </td>
+   <td>$1,000.00</td>
+   <td>$712.50</td> 
+   <td>$287.50</td> 
+   </tr>
+   <tr>
+   <td colspan="8"> &nbsp;</td> 
+   </tr>
+   <tr class="totals_c1">
+   <td>Totals</td>
+   <td>66</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>$11,492.50</td>
+   <td>$8,932.34</td> 
+   <td>$2,560.16</td> 
+   </tr>
+   <tr>
+   <td>Shipping Collected</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td> 
+   <td> </td> 
+   </tr>
+   <tr>
+   <td>Refund (To be discussed with Waleed)</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td> 
+   <td> </td> 
+   </tr>
+   <tr>
+   <td>Credit Card Fees (Stripe)</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td> 
+   <td> </td> 
+   </tr>
+   <tr class="total_invoice">
+   <td>Total Invoice</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td> 
+   <td> </td> 
+   </tr>
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
+	 </form>  
+
+<!-- End Products Sales -->
+
+
+	 </div>
+	
+	 
+	 
+	 </div>
+
+ 
+<!-- Start Taxes Collected List -->
+   <div class="row">
+	 
+	 <div class="col-12"> 
+	 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+  
+<div class="row">
+<div class="col-md-12">
+ 
+ <h2 class="w-100">Taxes Collected</h2>  </div>	
+	
+  </div>	
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top">
+   <th>Tax code State</th>
+ <th>Rate</th>
+ <th>Total tax</th>
+ <th>Order tax</th>
+ <th>Shipping tax</th> 
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   <td>US-FL-US-FL- TAX-1</td>
+   <td>6.000%</td>
+   <td> </td>
+   <td> </td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>US-PA-US-PA TAX-1</td>
+   <td>6.000%</td>
+   <td> </td>
+   <td> </td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>US-CT-US-CT TAX-1</td>
+   <td>6.35%</td>
+   <td> </td>
+   <td> </td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>US-NY-US-NY TAX-1</td>
+   <td>8.875%</td>
+   <td> </td>
+   <td> </td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>US-NJ-US-NJ TAX-1</td>
+   <td>6.625%</td>
+   <td> </td>
+   <td> </td>
+   <td></td>
+   </tr>
+   <tr>
+   <td colspan="8"> &nbsp;</td> 
+   </tr>
+   <tr class="total_invoice">
+   <td>Total Tax </td>
+   <td> </td>
+   <td> $0.00</td>
+   <td> </td>
+   <td> </td> 
+   </tr>
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
+	 </form>  
+ 
+
+	 </div>
+	
+	 
+	 
+	 </div>
+<!-- End Recently Invited Physicians List -->
+	 
+	 
+	 </div> 
+	
+ 
+	<!-- Start Footer -->
+ 
+
+<footer class="footer">
+
+<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-12">
+							<div class="left">
+								<p>©2023 The Recovery Shop – (Patent Pending) ALL RIGHTS RESERVED</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+<!-- End Footer -->	
+	 
+ <!-- date range -->
+   <script>
+        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+        $('#startDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: today,
+            maxDate: function () {
+                return $('#endDate').val();
+            }
+        });
+        $('#endDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: function () {
+                return $('#startDate').val();
+            }
+        });
+    </script>
+ <!-- end date range -->
+ 
+ 
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>  
+ 	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+ <!-- Popover JS -->
+	 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
+  
+
+</body>
+</html>
