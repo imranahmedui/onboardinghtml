@@ -28,6 +28,88 @@
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+/* CSS CLASSES ADDED BY ALI */
+
+/* button for selecting all and clearing all under add physician */
+
+.rounded_corner {
+	border-radius: 7px;
+}
+/* After a user send a hospital invite it will direct them to a page where they can go back to a dashboard or invite another hospital. This is the color of the button that says add physician */
+.invite_sent_btn {
+
+	background-color: ;
+
+}
+/* for register/invite_hospital_send_message.html */
+.bcolor {
+	background-color: #1a7cca;
+}
+
+
+/* END CSS CLASSES BY ALI */
+
+/* Reports */
+.totals_c1 {
+    background-color: #E3EDF5;
+    font-weight: 600;
+}
+.total_invoice {
+    background-color: #5188CA;
+    color: #fff;
+    font-weight: 500;
+}
+.filter_report {
+    background-color: #E3EDF5;
+    padding: 12px 12px;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+.filter_report span {
+    float: left;
+    line-height: 45px;
+    font-weight: 500;
+    color: #212121;
+}
+.filter_report select {
+    padding: 6px 6px;
+    margin: 0px 5px;
+    float: left;
+    width: 225px;
+}
+.filter_report label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 37px;
+}
+.filter_report input[type="checkbox"], input[type="radio"] {
+    margin: 8px;
+}
+.input-group-append {
+    margin-left: 0px;
+    float: none !important;
+}
+.start_date{ 
+    width: 126px !important;
+    float: left;
+}
+.end_date {
+    float: left;
+    width: 126px !important;
+    margin-left: 76px;
+}
+.replace_1 .input-group {
+    position: inherit !important;
+    display: block !important;
+    float: left !important;
+    width: 126px;
+}
+.search_report {
+    margin-top: 6px;
+    background-color: #133F72 !important;
+    border-color: #133F72 !important;
+}
 /* Notification UL LI */
 .alert_custom li {
     font-size: 18px;
@@ -1348,10 +1430,10 @@ input {
 .logo {
 	margin-top: 0px !important;
 	color: #fff !important;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 	font-family: roboto; 
-	line-height: 55px;
+	line-height: 59px;
 }
 .logo a{
 	color: #fff !important;
@@ -7220,12 +7302,12 @@ body.offcanvas-active{
 #navbar_main .nav-item {
 	padding:10px 7px;
     color: #fff;
-    font-size: 16px; 
+    font-size: 15px; 
 }
 #navbar_main a {
 	padding:0px;
     color: #fff;
-    font-size: 16px;
+    font-size: 15;
 }
 #navbar_main .dropdown-toggle::after{
     border-top: 0;
