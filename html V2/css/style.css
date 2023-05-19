@@ -317,6 +317,12 @@
 }
 
 /* Reports */
+.gj-datepicker input {
+    border-radius: 8px 0px 0px 8px !important;
+}
+.sm_res .clear_btn {
+    margin: 7px 0;
+}
 .totals_c1 {
     background-color: #E3EDF5;
     font-weight: 600;
@@ -421,6 +427,7 @@
 	background-color: #3187D2;
     border: 0px;
     border-radius: 0px;
+	display: inline-block;
 }
 .go_back button{
 	border: 0px;
