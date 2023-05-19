@@ -30,6 +30,33 @@
 ========================================*/
 /* CSS CLASSES ADDED BY ALI */
 
+/* classes for modal spinner */
+
+.modal_c {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .spinner {
+	width: 50px;
+	height: 50px;
+	border: 5px solid #fff;
+	border-top: 5px solid #007bff;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+	to { transform: rotate(360deg); }
+  }
+
 /* button for selecting all and clearing all under add physician */
 
 .rounded_corner {
@@ -49,7 +76,153 @@
 
 /* END CSS CLASSES BY ALI */
 
+/* welcome Physicians v2 page css */
+
+.new_wrap{
+	
+}
+.new_wrap h1{
+	font-family:roboto, arial;
+	font-size:30px;
+	color:#000;
+}
+.spacer{
+	display:block;
+	width:100%;
+	height:20px;
+}
+.breadcrumb_v2 {
+    background-color: #E3EDF5;
+    border-radius: 50px;
+    padding: 12px 50px;
+    width: fit-content;
+}
+.breadcrumb_v2 ul {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.breadcrumb_v2 li{
+    margin: 0px 10px;
+    font-size: 22px;
+    font-weight: 500;	
+    color: #000;
+    float: left;
+    line-height: 40px;
+}
+.auto_data_fill_v2 {
+    background-color: #E3EDF5;
+    padding: 40px 20px 20px 20px; 
+    text-align: left;	
+    border-radius: 8px;	
+    float: left;
+}
+.auto_data_fill_v2 h2 {
+    font-size: 20px;
+    color: #456681;
+    border-bottom: 1px solid #456681;
+    margin: 0px 0px 35px 0px;
+    padding: 0px 0px 12px 0px;
+}
+.auto_fill_value {
+    float: left;
+    width: 100%;	
+    margin-bottom: 30px;
+}
+.auto_fill_value img {
+    float: left;	
+    margin-right: 18px
+}
+.value_fill {
+    float: left;
+}
+.value_fill label {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 500;
+    width: 100%;
+    margin: 0px 0px 2px 0px;
+}
+.value_fill small {
+    color: #696868;
+    font-size: 15px;
+    margin: 0px;
+}
+.physician_info_v2 {
+    background-color: #E0EAE2;
+    padding: 40px 20px 20px 20px; 
+    text-align: left;	
+    border-radius: 8px;
+}
+.physician_info_v2 h2 {
+    font-size: 20px;
+    color: #3E7018;
+    border-bottom: 1px solid #3E7018;
+    margin: 0px 0px 35px 0px;
+    padding: 0px 0px 12px 0px;
+}
+.physician_info_v2 label {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 500;
+    width: 100%;
+    margin: 4px 0px 4px 0px;
+}
+.physician_info_v2 .col-md-12 [type="file"] {
+    margin-bottom: 20px !important;
+}
+.widget-content {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.listing li {
+    background-color: #E3EDF5;
+    margin: 8px 0px !important;
+}
+.has_input_icon_2 label {
+    text-align: left;
+    display: block;
+    color: #212121;
+    font-family: roboto;
+    font-weight: 500; 
+    font-size: 20px;
+    float: left;
+}
+.update_profile_v2 {
+    background-color: #EAE8D4;
+    padding: 40px 20px 20px 20px;
+    text-align: left;
+    border-radius: 8px;
+}
+.update_profile_v2 h2 {
+    font-size: 20px;
+    color: #6C6624;
+    border-bottom: 1px solid #6C6624;
+    margin: 0px 0px 35px 0px;
+    padding: 0px 0px 12px 0px;
+}
+.update_profile_v2 label {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 500;
+    width: 100%;
+    margin: 4px 0px 4px 0px;
+}
 /* Invite Bulk Physicians */
+.custom_invite_physicians{
+    border-radius: 8px;
+}
+.practice select {
+    border-radius: 8px;
+}
+.login_wrap input {
+    border-radius: 8px;
+}
+.login_wrap select {
+    border-radius: 8px;
+}
 .numbers {
     text-align: left;
     line-height: 40px;
@@ -73,6 +246,11 @@
 }
 .radius_custom{
 	border-radius:20px;
+}
+.space_input {
+    width: 100%;
+    border-bottom: 1px solid #B9B9B9;
+	margin: 23px 0 27px 0;
 }
 .space {
     width: 100%;
@@ -209,7 +387,7 @@
 	width: auto !important;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: inline-block;
 }
 /* Select All */
 .select_all {
@@ -228,13 +406,21 @@
 }
 
 /* Go Back */
+.color_grey{
+	background-color:#3C3939 !important;
+	border-color:#3C3939 !important;
+}
+.color_grey:hover{
+	background-color:#133F72 !important;
+	border-color:#133F72 !important;
+}
 .go_back{ 
-    float: left;
-	background-color: #50A5EF;
     color: #fff;
     padding: 8px;
-    border-radius: 6px;
-	margin: 12px auto;
+ 	margin: 12px auto;
+	background-color: #3187D2;
+    border: 0px;
+    border-radius: 0px;
 }
 .go_back button{
 	border: 0px;
@@ -244,7 +430,7 @@
     color: #fff !important;
 }
 .go_back:hover{ 
-	background-color: #3187D2;
+	background-color: #133F72;
 }
 
 /* Add Product Button in Product Detail Page */
@@ -330,7 +516,7 @@
   color: #212121;
   font-family: roboto;
   font-weight: 500;
-  width: 100%;  
+/*   width: 100%;   */
   float: left;
 }
 .form-control {
@@ -719,6 +905,7 @@ color: #fff;
     padding: 1px 15px;
     border-radius: 0px;
 	border:0px;
+    margin: -5px 0px 12px 0px;
 }
 .clear_btn i {
     margin: 0 8px 0px 0px;
@@ -3247,6 +3434,10 @@ select.form-control[multiple] option {
 }
 textarea.form-control{
     height: 170px !important;
+	border-radius: 8px;
+}
+textarea {
+		border-radius: 8px;
 }
 .form-control {
 	height: 34px;
@@ -3258,7 +3449,7 @@ textarea.form-control{
 	background-color: #fff;
 	background-image: none;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	border-radius: 8px !important;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
 }
@@ -5021,7 +5212,7 @@ select {
 	background:#fff;
 	border:1px solid #ddd;
 	resize:none;
-	border-radius:0;
+	border-radius: 8px; 
 	color:#333;
 }
 .shop.single .form .form-group label {
@@ -7029,6 +7220,7 @@ select {
 	color: #333 !important;
 	border: none;
 	border: 1px solid #eee;
+	border-radius: 8px;
 }
 .blog-single .reply .form-group label {
 	color: #333;
@@ -7137,7 +7329,7 @@ select {
 	border: 1px solid #e6e2f5;
 	padding: 15px 20px;
 	color: #333;
-	border-radius: 0px;
+	border-radius: 8px;
 	resize: none;
 	font-weight:400;
 }
@@ -8258,9 +8450,10 @@ body.offcanvas-active{
 .recommend_products_wrapper {
     background-color: #fff;
     border: 1px solid #E0E0E0;
+    border-radius: 8px;
     padding: 20px 12px;
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 520px;
+    max-height: 520px;
     overflow-y: auto;
     margin-top: 45px;
 }
@@ -8330,14 +8523,14 @@ body.offcanvas-active{
 }
 /* End Product Detail Page */
 .widget-content .listing {
-    max-height: 450px;
-    min-height: 450px;
+    max-height: 430px;
+    min-height: 430px;
     overflow-y: auto;
 	width: 100%;
 }
 #accordion .listing {
     min-height: 300px;
-    max-height: 300px;
+    max-height: 382px;
     overflow-y: auto;
 }
 .view_details { 
@@ -8360,8 +8553,14 @@ body.offcanvas-active{
   margin: 0 0 25px;
 }
 .recommend_products_wrapper .widget-content .listing li:hover {
-	background-color:#f0f0f0;
+	background-color:#3187D2;
 }
+.recommend_products_wrapper label:hover {
+    color: #fff;
+}
+.recommend_products_wrapper label  a:hover {
+    color: #fff !important;
+} 
 .widget-content ul#accordion li .plusminus {
     position: absolute;
     right: 30px;
@@ -8399,6 +8598,10 @@ body.offcanvas-active{
     padding: 4px 10px;
     margin: 0;
 }
+.widget-content ul#accordion li ul li:hover a {
+  text-decoration: none;
+  color: #fff;
+}
 .widget-content ul#accordion li ul li a {
 	color: #246DEB;
     text-transform: none;
@@ -8406,10 +8609,6 @@ body.offcanvas-active{
     font-family: roboto;
     font-weight: 300;
     display: block; 
-}
-.widget-content ul#accordion li ul li a:hover {
-  text-decoration: none;
-  color: #000000;
 }
 
 
