@@ -76,6 +76,80 @@
 
 /* END CSS CLASSES BY ALI */
 
+/* start invite landing page css */
+.invite_landing_page {
+    background-color: #CDE7F8;
+    padding: 40px 60px 20px 60px;
+    text-align: center;
+    border-radius: 8px;
+    color: #000;
+    border: 1px solid #166AB4;
+    margin: 80px auto;
+}
+.invite_landing_page_img img {
+    margin: 20px auto;
+}
+.invite_landing_page h1 {
+    padding: 20px 0;
+}
+ 
+.invite_landing_page p{
+	font-size:18px;
+	color:#000;
+}
+.box_sm{
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 30px;
+}
+.detail_wrap strong {
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    margin: 15px 0;
+}
+.detail_wrap p {
+    color: #000;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.box_sm img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.ab2 p {
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+}
+.green_wrap {
+    background-color: #E0EAE2;
+    text-align: center;
+}
+.ab2 strong {
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+}
+.facility_wrap{
+	float:left;
+}
+.facility_wrap input {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.invite_landing_page_img {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* end invite landing page css */
+
 /* welcome Physicians v2 page css */
 
 .new_wrap{
@@ -110,6 +184,9 @@
     color: #000;
     float: left;
     line-height: 40px;
+}
+.auto_fill_value img {
+    width: 76px;
 }
 .auto_data_fill_v2 {
     background-color: #E3EDF5;
