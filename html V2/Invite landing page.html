@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>HEALTH CARE SOLUTIONS</title>
+ 
+	<!-- Web Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9ddbcb7f65.js" crossorigin="anonymous"></script>
+   
+	 <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css"> 
+	
+	<!-- custom StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<!-- Start Responsive top Menus -->	
+ <script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+<!-- End Responsive top Menus -->	 	
+	 
+	
+</head>
+<body>
+	
+ 
+	
+	<!-- Header -->
+	<header class="header shop">
+		 
+	 
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						<div class="col-12">
+		<div class="logo">RECOVERY SHOP - ONBOARDING  |</div>	
+		<span class="screen-darken"></span>		
+		 <button data-trigger="navbar_main" class="d-lg-none btn" type="button">  <i class="fa-solid fa-bars pr-2"></i> </button>
+	
+				<!-- ============= COMPONENT ============== -->
+<nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg  navbar-light">
+ <div class="container-fluid px-0">
+    <div class="offcanvas-header float-right">  
+		<button class="btn-close float-end"><i class="fa-solid fa-circle-xmark"></i></button>
+	</div>
+     
+	
+<div class="container text-center">
+	<ul class="navbar-nav bt-1">
+		<li class="nav-item"><a class="nav-link" href="products.html"> Products</a></li> 
+		<li class="nav-item"><a class="nav-link" href="contactus.html"> Support </a></li>  	 
+	</ul>
+	
+	<ul class="navbar-nav bt-1">
+		<li class="nav-item"><a class="nav-link" href="login.html"> Login</a></li>
+		<li class="nav-item separate_li">/</li>
+		<li class="nav-item"><a class="nav-link" href="Hospital_Register.html"> Register </a></li> 
+	</ul>
+	
+	</div>
+
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+						
+					
+							 
+						</div>
+					 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	 
+ 
+  
+
+<!-- start account info & physician info section -->
+ <div class="container invite_landing_page mb-5">
+	 <div class="row">
+	  <div class="col-md-12">
+	  <h1>Welcome to the Recovery Shop!</h1>
+	  <p>We are delighted to introduce Recovery Shop as a trusted vendor for post-operative recovery products.<strong> An Overview of the Onboarding process</strong></p>
+	  </div></div>
+	  <div class="row py-4 invite_landing_page_img">
+<!-- start account info section -->	 
+	 <div class="col p-0"> <div class=" "> <img src="images/hospital_v2.png"><div> Add Facility Information  </div></div> </div>
+	 <div class="col p-0"> <div class=" "> <img src="images/Add _Administrator_Information.png"><div> Add Administrator Information </div></div> </div>
+	 <div class="col p-0"> <div class=" "> <img src="images/Credentials.png"><div> Save Your
+Credentials </div></div> </div>
+	 <div class="col p-0"> <div class=" "> <img src="images/Revuew_Document.png"><div> Review the Contract & Sign </div></div> </div>
+	 <div class="col p-0"> <div class=" "> <img src="images/onboarding_done.png"><div> Onboarding .... Done! </div></div> </div>
+<!-- end account info section  -->	 
+ 
+ 
+ </div>
+ 
+ <div class="row"><div class="col-12"><button type="submit" class="btn-primary btn-lg btn-block primary_btn my-4 btn_small">Get started today with onboard Practice!</button></div></div>
+  </div>
+  
+  <div class="container">
+  <div class="row mb-3">
+  <div class="col box_sm"><img src="images/invite_physicians.png">
+  <div class="detail_wrap"><strong>Invite Physicians</strong><p>You can send email invites to Physicians in your Practice</p><p>We create an E-Commerce store front for each physician, group, hospital or 
+surgery center</p> </div></div>
+
+  <div class="col box_sm"><img src="images/recommend_products.png">
+  <div class="detail_wrap"><strong>Recommended Products</strong><p>Physicians select Products to Recommend their Patients</p><p>The physician is in control of what they want the patient to purchase</p> </div></div>
+
+  <div class="col box_sm"><img src="images/shop_patients.png">
+  <div class="detail_wrap"><strong>One-Stop Shop for Patients</strong><p>Your patients have a one-stop shop to purchase their Recovery Products</p><p>The patient is able to receive their products well in advance of their surgery</p> </div></div>
+
+
+</div>
+
+
+ <div class="row">
+  <div class="col box_sm"><img src="images/physician_store.png">
+  <div class="detail_wrap"><strong>Physician Storefront</strong><p>It generates income for the physician/group/hospital/center</p><p>The office fields less phone calls because they patient is getting only products recommended and verified by the physician</p> </div></div>
+
+  <div class="col box_sm green_wrap">
+  
+  <div class="ab1"><img src="images/partners withus.png"></div>
+  <div class="ab2"><strong>Here’s why partnering with us</strong><p>Can enhance your surgery practice and benefit your patients</p></div>
+  
+  
+   </div>
+  
+  </div>
+  
+   <div class="row">
+   <div class="col-12 my-5"> </div>
+   
+  </div></div> 
+<!-- End account info & physician info section -->
+ 
+
+
+   
+	 
+		
+	 
+	
+	 
+	
+	 
+	<!-- Start Footer -->
+ 
+
+<footer class="footer">
+ 
+
+ 
+
+<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-12">
+							<div class="left">
+								<p>©2023 The Recovery Shop – (Patent Pending) ALL RIGHTS RESERVED</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+</div>
+
+<!-- End Footer -->	
+
+	 
+	
+	 
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>  
+ 	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+ <!-- Popover JS -->
+	 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
+  	 
+
+ <!-- Start Accordian JS -->
+<script>
+$(document).ready(function () {
+	$("#accordion li > h4").click(function () {
+
+		if ($(this).next().is(':visible')) {
+			$(this).next().slideUp(300);
+			$(this).children(".plusminus").text('+');
+		} else {
+			$(this).next("#accordion ul").slideDown(300);
+			$(this).children(".plusminus").text('-');
+		}
+	});
+});
+
+</script>	
+ <!-- End Accordian JS -->
+
+</body>
+</html>
