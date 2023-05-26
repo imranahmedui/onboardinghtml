@@ -76,6 +76,13 @@
 
 /* END CSS CLASSES BY ALI */
 
+.shadow_v2{
+    border-radius: 20px;
+    box-shadow: 0px 8px 13px 5px rgba(0,0,0,0.16);
+    border: 1px solid #E3EDF5;
+    margin: 50px auto;
+}
+
 /* carrousel */
   /* This is important to make z-indexes work as expexted */
     .carousel-item {
@@ -248,7 +255,8 @@
     padding: 40px 20px 20px 20px; 
     text-align: left;	
     border-radius: 8px;	
-    float: left;
+    float: left;	
+    width: 100%;
 }
 .auto_data_fill_v2 h2 {
     font-size: 20px;
