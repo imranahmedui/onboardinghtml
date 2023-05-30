@@ -3496,6 +3496,9 @@ select.form-control[multiple] option {
 .body_content_wrapper{
 /*	  padding: 0px 10px 20px 10px; */
 }
+.body_content_wrapper input {
+/*    border-radius: 0px !important; */
+}
 .body_content_wrapper h2 a {
     font-size: 14px;
     color: #246DEB;
@@ -3608,6 +3611,9 @@ select.form-control[multiple] option {
   position: relative;
   display: table;
   border-collapse: separate;
+}
+.input-group input {
+    border-radius: 0px !important;
 }
 .input-group .form-control {
   width: 100%;
