@@ -32,6 +32,10 @@
 
 /* classes for modal spinner */
 
+.title_table {
+	font-size: 1.5rem;
+}
+
 .modal_c {
 	position: fixed;
 	top: 0;
@@ -507,10 +511,11 @@
     font-weight: 500;
 }
 .filter_report {
-    background-color: #E3EDF5;
+    background-color: #def0fe;
     padding: 12px 12px;
     margin: 20px 0px;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .filter_report span {
     float: left;
@@ -3144,10 +3149,12 @@ Start Hopital register
 }
 /* Product Card */
 .filter {
-    background-color: #E3EDF5;
+    background-color: #deedf9;
     padding: 12px 12px;
     margin: 20px 0px;
     border-radius: 20px;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .filter label {
     font-size: 16px;
@@ -3181,11 +3188,15 @@ select.form-control[multiple] option {
 }
 .card{
     box-shadow: 0px 0px 50px 0px rgb(230 243 254 / 37%);
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
 }
 .card-img-top {
     width: 250px;
     margin: auto;
     min-width: 250px;
+    display: block;
 }
 .card-body {
     padding: 5px 12px 12px;
@@ -6113,11 +6124,13 @@ select {
   color: #187BD2;
 }
 .login_wrap{
-	background-color:#F0F0F0;
-	padding: 48px;	
-    text-align: center; 
-    overflow: auto;
+	background-color: #f8f8f8;
+	padding: 48px;
+	text-align: center;
+	overflow: auto;
 	margin-bottom: 100px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	border-radius: 10px;
 }
 .login_wrap a{
 	text-underline-offset: 0.3em;
