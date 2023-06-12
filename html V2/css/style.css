@@ -3711,6 +3711,10 @@ textarea {
     width: 290px !important;
     max-width: 290px;
 }
+#myTabContent col{ 
+    width: 290px !important;
+    max-width: 290px;
+}
 .upload_products {
     background-color: #FFF3CD;
 	border:1px solid #FFE69C;
