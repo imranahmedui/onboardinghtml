@@ -138,6 +138,35 @@
 }
 /* end carrousel */
 
+/* hospital admin */
+.banner_new {
+    background-color: #FFDFDF;
+    background-image: url(../images/questionmar.png);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.btn_docusign {
+    background-color: #D93D3D;
+    float: left;
+    color: #fff !important;
+    padding: 8px 20px;
+    margin: 10px 0px;
+    border-radius: 50px;
+	
+    float: right;
+}
+.banner_new p {
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #D93D3D;
+    font-weight: 500;
+    line-height: 26px;
+}
+
 /* start invite landing page css */
 .invite_landing_page {
     background-color: #CDE7F8;
