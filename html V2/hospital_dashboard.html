@@ -143,21 +143,84 @@
 	</header>
 	<!--/ End Header -->
 	 
-	  
+	
+<!-- Start Banner -->
+<div class="container p-4">
+<div class="row">
+<a href="#"><img src="images/banner.png" class="text-center"></a>
+</div>
+</div>
+<!-- End Banner -->	
   
 	
 	 <div class="container mt-2">
 	 <div class="row">
+
 	 
 	 <div class="col-12"> 
-	 
+	<h1 style="font-size:1.4rem;" class="text-center"><strong>  COSM</strong>  </h1> 
 	 
 	 <form class="pt-4 body_content_wrapper sm_res">
  
    	<div class="col-12 pl-0">  
  
  <!-- Start Hospital Account Details -->
-<div class="row">
+ <div class="row">
+                   <div class="col-12 pt-5 pb-3 body_content_wrapper">
+                      <h2 id="f2" style="font-size: 1.3rem;text-align:center;margin-bottom:2vh;">Summary Statistics</h2>
+                   </div>
+                </div>
+				
+				<div class="row">
+                   <div class="col-md-2 col-sm hac button_box">
+                      <div class="c1 widget stat_box">
+                         Physicians <br>  Recommending
+                         <div class="digits">2</div>
+                       <!--  Functionality from views application  -->
+                         <a href="/views/physician/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                      <div class="c2 widget stat_box">
+                         Products <br> Recommended 
+                         <div class="digits">27</div>
+                         <a href="/views/product/list/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                      <div class="c3 widget stat_box" style="background-color: rgb(226, 149, 220);">
+                        Associated <br> Specialties  
+                         <div class="digits">4</div>
+                         <a href="/views/specialty/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                    <div class="c3 widget stat_box" style="background-color: rgb(225, 225, 133);">
+                      Physicians <br> Invited  
+                       <div class="digits">0</div>
+                       <a href="/views/physician/qsview/?direct_view=True&amp;view_type=complete&amp;hosp_id=46">View All</a>
+                    </div>
+                    </div>
+                    <div class="col-md-2 col-sm hac  button_box">
+                        <div class="c3 widget stat_box">
+                          Physicians <br> Waiting  
+                           <div class="digits">0</div>
+                           <a href="/views/physician/qsview/?direct_view=True&amp;view_type=waiting&amp;hosp_id=46">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm hac  button_box">
+                        <div class="c3 widget stat_box" style="background-color: rgb(129, 168, 247);">
+                          Manually <br> Onboarded  
+                           <div class="digits">1</div>
+                           <a href="/views/physician/?direct_view=True&amp;hosp_id=46&amp;view_type=await_manual">View All</a>
+                        </div>
+                    </div>
+
+                   
+                </div>
+				
+				
+<div class="row pt-5">
 <div class="col-md-4">
  
  <h2 class="w-100">Hospital Account Details</h2>  </div>	
