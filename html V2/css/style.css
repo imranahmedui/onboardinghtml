@@ -3707,11 +3707,11 @@ textarea {
     text-align: center;
     padding: 5px;
 }
-#productsRow col{ 
+#productsRow .col{ 
     width: 290px !important;
     max-width: 290px;
 }
-#myTabContent col{ 
+#myTabContent .col{ 
     width: 290px !important;
     max-width: 290px;
 }
