@@ -300,6 +300,9 @@
     padding: 40px 20px 20px 20px; 
     text-align: left;	
     border-radius: 8px;
+    display: block;
+    width: 100%;
+    float: left;
 }
 .physician_info_v2 h2 {
     font-size: 20px;
