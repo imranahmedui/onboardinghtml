@@ -3703,6 +3703,14 @@ textarea {
 /*======================================
 	Start Upload Products CSS
 ========================================*/
+.allviewCards p {
+    text-align: center;
+    padding: 5px;
+}
+#productsRow col{ 
+    width: 290px !important;
+    max-width: 290px;
+}
 .upload_products {
     background-color: #FFF3CD;
 	border:1px solid #FFE69C;
@@ -6159,8 +6167,6 @@ select {
     text-align: center; 
     overflow: auto;
 	margin-bottom:40px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 10px;
 }
 .invite_hospital_wrap a{
 	text-underline-offset: 0.3em;
