@@ -31,6 +31,34 @@
 /* CSS CLASSES ADDED BY ALI */
 
 /* classes for modal spinner */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+.info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+/* Just for CodePen styling - don't include if you copy paste */
 
 .title_table {
 	font-size: 1.5rem;
@@ -141,13 +169,14 @@
 /* hospital admin */
 .banner_new {
     background-color: #FFDFDF;
-    background-image: url(../images/questionmar.png);
+
     background-repeat: no-repeat;
     background-position: 15px 10px;
     padding-left: 150px;
     padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .btn_docusign {
     background-color: #D93D3D;
@@ -637,7 +666,7 @@
  	margin: 12px auto;
 	background-color: #3187D2;
     border: 0px;
-    border-radius: 0px;
+    border-radius: 7px;
 	display: inline-block;
 }
 .go_back button{
@@ -3682,6 +3711,9 @@ textarea {
 	border-radius: 8px !important;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+}
+.physician_info_v2 select.form-control {
+    margin-top: 8px;
 }
 .input-group-btn {
   position: relative;
