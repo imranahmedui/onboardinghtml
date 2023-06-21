@@ -1,4 +1,15 @@
 /* Tablet Screen */
+
+/* start GETSTARTED BANNER */
+
+@media only screen and (max-width: 1152px) {
+	.triger a { 
+    padding: 6px 8px;
+    display: block;
+    margin-top: 10px;
+}
+}
+/* End GETSTARTED BANNER */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .login_signup_wrap .pr-0{
 	    padding-right:  15px !important;
@@ -412,6 +423,9 @@
 
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+.triger { 
+    margin-top: 30px;
+}
 .input-group { 
     margin: 12px auto;
 }

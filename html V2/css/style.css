@@ -108,6 +108,57 @@
 
 /* END CSS CLASSES BY ALI */
 
+/* start GETSTARTED BANNER */
+
+.getstarted_wrapper{
+	background: #6DA7D9; 
+	box-shadow: 6px 8px 1px 0px rgba(0, 0, 0, 0.14); 
+	padding:20px 12px; 
+	margin:5px;
+}
+.getstarted_wrapper p {
+	color:#143F72;
+	font-size: 20px;
+	font-family: Roboto;
+	font-weight: 500;
+	line-height: 40px;	
+}
+.getstarted_wrapper i {
+    color: #143F72;
+    font-size: 25px;
+    padding: 12px;
+    font-weight: bold;
+}
+.heading {
+    font-family: roboto;
+    font-size: 36px;
+    color: #072851;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+.triger {
+    text-align: center;
+}
+.triger a {
+    background: #143F72;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 40px;
+    padding: 12px 20px;
+}
+.triger a:hover{
+	background-color:#285E9E;
+}
+.triger a:last-child {
+    background: #2671B2;	
+} 
+/* end GETSTARTED BANNER */
+
+
 .shadow_v2{
     border-radius: 20px;
     box-shadow: 0px 8px 13px 5px rgba(0,0,0,0.16);
@@ -169,7 +220,7 @@
 /* hospital admin */
 .banner_new {
     background-color: #FFDFDF;
-
+    background-image: url("../images/questionmar.png");
     background-repeat: no-repeat;
     background-position: 15px 10px;
     padding-left: 150px;
