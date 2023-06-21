@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>Dashboard Master User</title>
+ 
+	<!-- Web Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9ddbcb7f65.js" crossorigin="anonymous"></script>
+   
+	 <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css"> 
+	
+	<!-- custom StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<!-- Start Responsive top Menus -->	
+ <script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+<!-- End Responsive top Menus -->	 	
+	 
+	
+</head>
+<body>
+	
+ 
+	
+	<!-- Header -->
+	<header class="header shop">
+		 
+	 
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						<div class="col-12">
+		<div class="logo">RECOVERY SHOP - ONBOARDING  |</div>	
+		<span class="screen-darken"></span>		
+		 <button data-trigger="navbar_main" class="d-lg-none btn" type="button">  <i class="fa-solid fa-bars pr-2"></i> </button>
+	
+				<!-- ============= COMPONENT ============== -->
+<nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg  navbar-light">
+ <div class="container-fluid px-0">
+    <div class="offcanvas-header float-right">  
+		<button class="btn-close float-end"><i class="fa-solid fa-circle-xmark"></i></button>
+	</div>
+     
+	
+<div class="container text-center">
+	<ul class="navbar-nav bt-1">
+		<li class="nav-item"><a class="nav-link" href="hospital_dashboard.html"> Hospital Dashboard</a></li>  
+		<li class="nav-item"><a class="nav-link" href="physician_list_hospital_user.html"> Physicians</a></li> 
+		<li class="nav-item"><a class="nav-link" href="products.html"> Products</a></li> 
+		<li class="nav-item"><a class="nav-link" href="contactus.html"> Support </a></li>
+	   	 
+	</ul>
+	
+	<ul class="navbar-nav bt-1">
+		<li class="nav-item"><span>Welcome, Hospital</span></li>
+		<li class="nav-item separate_li">/</li>
+		<li class="nav-item"><a class="nav-link" href="logout.html"> SignOut </a></li> 
+	</ul>
+	
+	</div>
+
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+						
+					
+							 
+						</div>
+					 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	 
+	
+<!-- Start Banner -->
+<div class="container p-4">
+<div class="row">
+<div class="banner_new">
+<a href="#"><p>Please <strong>CLICK HERE</strong> to complete your onboarding process. This is a crucial step to unlock the full benefits of the Recovery Shop platform.
+
+<p class="btn_docusign">Review & Sign</p>
+
+</p></a>
+</div>
+</div>
+</div>
+<!-- End Banner -->	
+  
+	
+	 <div class="container mt-2">
+	 <div class="row">
+
+	 
+	 <div class="col-12"> 
+	<h1 style="font-size:1.4rem;" class="text-center"><strong>  COSM</strong>  </h1> 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+ 
+ <!-- Start Hospital Account Details -->
+ <div class="row">
+                   <div class="col-12 pt-5 pb-3 body_content_wrapper">
+                      <h2 id="f2" style="font-size: 1.3rem;text-align:center;margin-bottom:2vh;">Summary Statistics</h2>
+                   </div>
+                </div>
+				
+				<div class="row">
+                   <div class="col-md-2 col-sm hac button_box">
+                      <div class="c1 widget stat_box">
+                         Physicians <br>  Recommending
+                         <div class="digits">2</div>
+                       <!--  Functionality from views application  -->
+                         <a href="/views/physician/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                      <div class="c2 widget stat_box">
+                         Products <br> Recommended 
+                         <div class="digits">27</div>
+                         <a href="/views/product/list/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                      <div class="c3 widget stat_box" style="background-color: rgb(226, 149, 220);">
+                        Associated <br> Specialties  
+                         <div class="digits">4</div>
+                         <a href="/views/specialty/?direct_view=True&amp;hosp_id=46">View All</a>
+                      </div>
+                   </div>
+                   <div class="col-md-2 col-sm hac  button_box">
+                    <div class="c3 widget stat_box" style="background-color: rgb(225, 225, 133);">
+                      Physicians <br> Invited  
+                       <div class="digits">0</div>
+                       <a href="/views/physician/qsview/?direct_view=True&amp;view_type=complete&amp;hosp_id=46">View All</a>
+                    </div>
+                    </div>
+                    <div class="col-md-2 col-sm hac  button_box">
+                        <div class="c3 widget stat_box">
+                          Physicians <br> Waiting  
+                           <div class="digits">0</div>
+                           <a href="/views/physician/qsview/?direct_view=True&amp;view_type=waiting&amp;hosp_id=46">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm hac  button_box">
+                        <div class="c3 widget stat_box" style="background-color: rgb(129, 168, 247);">
+                          Manually <br> Onboarded  
+                           <div class="digits">1</div>
+                           <a href="/views/physician/?direct_view=True&amp;hosp_id=46&amp;view_type=await_manual">View All</a>
+                        </div>
+                    </div>
+
+                   
+                </div>
+				
+
+<!-- start GETSTARTED Banner -->
+
+<div class="row py-5 getstarted_wrapper">
+
+<div class="col-md-8 col-sm-12">
+<p><i class="fa-solid fa-check"></i>You can send quick invite and have Physician onboard themselves</p>
+<p><i class="fa-solid fa-check"></i>Or you can add Physicians and there recommendations</p>
+
+</div>
+<div class="col-md-4 col-sm-12 triger">
+<div class="heading">GetStarted...</div>
+<a href="#">Send Invite</a>
+<a href="#">Or Add Physcian</a>
+</div>
+ 
+</div>
+
+<!-- end GETSTARTED Banner -->
+				
+<div class="row pt-5">
+<div class="col-md-4">
+ 
+ <h2 class="w-100">Hospital Account Details</h2>  </div>	
+	
+<div class="col-md-4">
+	 <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn1 btn-default" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+		
+ </div>	
+<div class="col-md-4"> 
+<a href="#" class="btn btn-primary btn2_blue fl-right">Update Account Info</a>
+</div>
+
+
+ </div>	
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top">
+   <th>Hospital Name</th>
+ <th>Full Name</th>
+ <th>Email Address</th>
+ <th>Phone Number</th>
+<th>Tax ID</th> 
+  <th>Bank Account#</th> 
+  <th>Routing</th>
+  <th>Business Address</th>
+  <th>Hospital Website</th>
+  <th>Total Physicians</th>
+  <th class="text-center">Edit</th>
+  <th class="text-center">Remove</th> 
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   <td>Boston Sports Medicine</td>
+   <td>Stephan</td>
+   <td>stephan@mail.com</td>
+   <td>+1-202-555-0106</td>
+   <td>P99999244</td>
+   <td>GB14BARC20038098691859 </td> 
+   <td class="text-center">211472977</td> 
+   <td>1931 Hurstbourne Pkwy Louisville Kentucky, 40220</td> 
+   <td>www.bostonsportsmed.com</td>  
+   <td class="text-center">15</td> 
+   <td class="text-center"><a href="edit_hospital.html" class=" "><i class="fa-solid fa-pen-to-square"></i></a></td> 
+   <td class="text-center"><a href="#" class=" "><i class="fa-solid fa-trash-can"></i></a></td> 
+   </tr>
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
+	 </form>  
+
+<!-- End Hospital Account Details -->
+
+
+	 </div>
+	
+	 
+	 
+	 </div>
+
+ 
+<!-- Start Recently Invited Physicians List -->
+   <div class="row">
+	 
+	 <div class="col-12"> 
+	 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+  
+<div class="row">
+<div class="col-md-6">
+ 
+ <h2 class="w-100">Recently Invited Physicians</h2>  </div>	
+	
+<div class="col-md-6">
+	 <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn1 btn-default" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+		
+ </div>	 
+
+
+ </div>	
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top">
+   <th class="text-center">Picture</th>
+ <th>Full Name </th>
+ <th>Email</th> 
+ <th>Invite Send on</th> 
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   <td> </td>
+   <td>Dr. Thomas J. Gill, MD</td>
+   <td>gill@msn.com</td> 
+   <td>20-06-2023</td> 
+   </tr>
+   <tr>
+   <td><img src="images/curtis.jpg" class="physician_sm_pic">	</td>
+   <td>Dr. Thomas J. Gill, MD</td>
+   <td>gill@msn.com</td> 
+   <td>20-06-2023</td> 
+   </tr>
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
+	 </form>  
+ 
+
+	 </div>
+	
+	 
+	 
+	 </div>
+<!-- End Recently Invited Physicians List -->
+
+
+
+<!-- Start Physicians List -->
+   <div class="row">
+	 
+	 <div class="col-12"> 
+	 
+	 
+	 <form class="pt-4 body_content_wrapper sm_res">
+ 
+   	<div class="col-12 pl-0">  
+  
+<div class="row">
+<div class="col-md-6">
+ 
+ <h2 class="w-100">Recent Physicians</h2>  </div>	
+	
+<div class="col-md-6">
+	 <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search by Physician, Hospital, Specialty, Body Parts">
+            <div class="input-group-btn">
+                <button class="btn1 btn-default" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+		
+ </div>	 
+
+
+ </div>	
+ 
+<div class="table-responsive">
+
+  <table class="table table-bordered my-3 table-sm table-hover">
+  <thead>
+   <tr class="align-text-top">
+   <th class="text-center">Picture</th> 
+ <th>Full Name</th>
+ <th> Email </th>
+ <th>Specialty Areas</th> 
+ <th class="text-center">Products</th>  
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   <td></td>
+   <td>Dr. Thomas J. Gill, MD</td>
+   <td>gill@msn.com</td>
+   <td>Hip & Knee / Shoulder / Regenerative</td>
+   <td></td>
+   </tr>
+   
+    
+   
+ 
+  </tbody>
+</table> 
+</div>	 
+</div>
+	 </form>  
+ 
+
+	 </div>
+	
+	 
+	 
+	 </div>
+<!-- End Physicians List -->
+
+
+
+	 
+	 
+	 </div> 
+	
+ 
+	<!-- Start Footer -->
+ 
+
+<footer class="footer">
+
+<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-12">
+							<div class="left">
+								<p>©2023 The Recovery Shop – (Patent Pending) ALL RIGHTS RESERVED</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+<!-- End Footer -->	
+	 
+
+ 
+ 
+<!-- Modal -->
+<div class="modal fade" id="update_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+		 <h3 class="mx-auto">Physician profile is not completed</h3>
+		
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+		<p><strong>Please Send Reminder To Physician OR Complete Yourself!</strong></p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <a href="#" class="btn btn-secondary btn_fade_blue">Send Reminder</a>
+        <a href="#" class="btn btn-primary btn_blue">Complete Yourself</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End Modal Popup -->
+	
+
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>  
+ 	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+ <!-- Popover JS -->
+	 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
+  
+
+</body>
+</html>
