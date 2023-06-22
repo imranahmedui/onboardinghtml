@@ -8855,7 +8855,7 @@ body.offcanvas-active{
 }
 /* End Product Detail Page */
 .widget-content .listing {
-    max-height: 430px;
+    max-height: 480px;
     min-height: 430px;
     overflow-y: auto;
 	width: 100%;
