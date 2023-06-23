@@ -1237,6 +1237,12 @@
 
 
 @media only screen and (max-width: 681px) {
+	.headings_wrapper h1 {
+    font-size: 30px; 
+}
+.headings_wrapper h2 {
+    font-size: 24px; 
+}
 .btn_wrapper{
 	display: block;
 	width: 100%;
@@ -2044,6 +2050,18 @@ font-size: 20px;
 	
 	.logo { 
   font-size: 15px;
+	}
+	.new_feature_products_wrapper{
+		padding: 60px 20px 60px;
+	}
+	.text_1 {
+		
+    width: auto;
+	}
+	.text_2 {
+    font-size: 35px;
+		
+    width: auto;
 	}
 }
 @media only screen and (max-width: 380px) {

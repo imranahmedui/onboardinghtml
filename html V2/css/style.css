@@ -31,7 +31,7 @@
 /* CSS CLASSES ADDED BY ALI */
 
 /* classes for modal spinner */
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+/* @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'); */
 
 .info-msg,
 .success-msg,
@@ -107,6 +107,130 @@
 
 
 /* END CSS CLASSES BY ALI */
+
+/* start contact us page */
+.banner_wrapper {
+  /*  background-image: url(../images/contact-us.jpg); */
+    background-repeat: no-repeat;
+    height: 370px;
+    margin-top: -40px !important;
+    background-size: cover !important; 
+	background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/contact-us.jpg);
+}
+.headings_wrapper {
+    text-align: center;
+    padding-top: 100px;
+}
+.headings_wrapper h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.headings_wrapper h2 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 400;
+}
+.three_boxes_wrapper {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+.three_boxes strong {
+    font-size: 25px;
+    color: #3E7018;
+    margin-bottom: 10px;
+}
+.three_boxes p {
+    color: #3C5E43;
+    font-size: 16px;
+    font-weight: 500;
+}
+.separate {
+    height: 24px;
+}
+.three_boxes {
+    background-color: #E0EAE2;
+    padding: 20px;
+    text-align: center;
+}
+.three_boxes i {
+    background-color: #54753A;
+    color: #E0EAE2;
+    padding: 25px 20px;
+    font-size: 36px;
+    border-radius: 100%;
+    width: 86px;
+    height: 86px;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+.three_boxes {
+    background-color: #E0EAE2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.contact_form_wrapper{
+	background-color: #E3EDF5;
+    padding: 30px;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.contact_form_wrapper strong {
+    font-size: 25px;
+    color: #456681;
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 30px;
+    padding-left: 15px;
+}
+.new_feature_products_wrapper {
+    background: linear-gradient(0deg, rgba(44, 96, 141, 0.4), rgba(44, 96, 141, 0.4)), url(../images/new_product_features.jpg);
+	padding: 60px 30px 60px;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background-position: top center;
+    background-size: 100%;
+    height: 663px;
+}
+.new_feature_products_wrapper label {
+    color: #fff !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+.new_feature_products_wrapper .form-group{
+	margin-bottom:25px;
+}
+.text_1 {
+    font-size: 24px;
+    color: #fff;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.text_2 {
+    font-size: 45px;
+    color: #fff;
+	font-weight:500;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+/* end contact us page */
+
 
 /* start GETSTARTED BANNER */
 
