@@ -220,21 +220,21 @@
 <!-- Modal -->
 <div class="modal fade" id="assign_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content custom_popup">
       <div class="modal-header">
    
-		 <h3 class="mx-auto">Complete Profile</h3>
+		 <div class="mx-auto phone_popup_heading">Please Assign Admin<br><strong>Phone Number</strong></div>
  
       </div>
       <div class="modal-body">
       
 		 <form>
-		 <input type="text" class="form-control" placeholder="Provide Mobile Contact Information" maxlength="18">
+		 <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 713-343-2343" maxlength="18">
 		 </form>
       </div>
      <div class="modal-footer mx-auto">
-	  <button type="submit" class="btn btn-primary btn_blue" style="background-color: #133F72;border-color: #133F72;">Update</button>
-	  <button type="submit" class="btn btn-secondary btn_fade_blue" data-dismiss="modal" aria-label="Close">Close</button>
+	  <button type="submit" class="btn btn-secondary btn_fade_blue">Update</button>
+	  <button type="submit" class="btn btn-primary btn_blue" aria-label="Cancel" data-dismiss="modal">Cancel</button>
         
       </div>
     </div>
