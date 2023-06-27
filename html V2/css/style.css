@@ -115,7 +115,7 @@
     height: 370px;
     margin-top: -40px !important;
     background-size: cover !important; 
-	background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/contact-us.jpg);
+	background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./../../../media/site_images/contact-us.jpg);
 }
 .headings_wrapper {
     text-align: center;
@@ -188,7 +188,7 @@
     padding-left: 15px;
 }
 .new_feature_products_wrapper {
-    background: linear-gradient(0deg, rgba(44, 96, 141, 0.4), rgba(44, 96, 141, 0.4)), url(../images/new_product_features.jpg);
+    background: linear-gradient(0deg, rgba(44, 96, 141, 0.4), rgba(44, 96, 141, 0.4)), url(./../../../media/site_images/new_product_features.jpg);
 	padding: 60px 30px 60px;
     text-align: center;
     overflow: auto;
@@ -230,6 +230,49 @@
     margin-bottom: 15px;
 }
 /* end contact us page */
+
+/* Start Requied Phone number popup */
+.custom_popup{
+	background: linear-gradient(0deg, rgba(43, 78, 109, 0.9), rgba(43, 78, 109, 0.9)), url(../images/phone_number.jpg);
+	border-radius: 20px;
+/*	background-image: url(../images/phone_number.jpg);
+	background-color:#2B4E6D; */
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+	background-size: cover;
+	background-position: top center;
+	padding: 80px 10px;
+
+}
+.custom_popup .modal-body {
+    padding: 30px 20px;
+}
+.custom_popup .modal-body input[type="text"],  input[type="tel"] {
+    height: 60px !important;
+    font-size: 20px;
+    color: #C3C4C5;
+    font-weight: 400;
+}
+.custom_popup .btn_blue{
+	background-color: #073965;
+	border-color: #073965;
+	padding: 15px 30px;
+}
+	
+.phone_popup_heading{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: roboto;
+    text-align: center;
+    color: #fff;	
+    text-transform: uppercase;
+    line-height: normal;
+}
+.phone_popup_heading strong{
+	font-size:48px;
+	font-weight:500;
+	font-family:roboto;
+}
+/* End Requied Phone number popup */
 
 
 /* start GETSTARTED BANNER */
